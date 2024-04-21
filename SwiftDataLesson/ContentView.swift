@@ -1,22 +1,46 @@
-//
-//  ContentView.swift
-//  SwiftDataLesson
-//
-//  Created by Круглич Влад on 21.04.24.
-//
-
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @State private var name = ""
+    @State private var surname = ""
     @Environment(\.modelContext) private var context
+    @Query private var items: [DataItem]
+    
     var body: some View {
-        HStack {
-            Text("Clear")
+        VStack {
+            TextField("Name", text: $name)
+                .padding()
+                .frame(width: 300,  height: 50)
+                .border(Color.black, width: 1)
+            TextField("Surname", text: $surname)
+                .padding()
+                .frame(width: 300,  height: 50)
+                .border(Color.black, width: 1)
+            Button(action: { addItem(self.name, self.surname) }) {
+                Text("Add")
+                    .frame(width: 300, height: 50)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+                    .font(.system(size: 20))
+            }
+            List(items) { item in
+                HStack {
+                    Text(item.name)
+                    Text(item.surname)
+                }
+            }
         }
+    }
+    
+    private func addItem(_ name: String, _ surname: String) {
+       context.insert(DataItem(name: name, surname: surname))
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

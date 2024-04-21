@@ -7,8 +7,9 @@
 
 import Foundation
 import SwiftData
-@Model 
-class DataItem: Identifiable {
+
+@Model
+class DataItem {
     var id: String
     var name: String
     var surname: String
@@ -18,4 +19,6 @@ class DataItem: Identifiable {
         self.name = name
         self.surname = surname
     }
+    
+    
 }
