@@ -29,6 +29,11 @@ struct ContentView: View {
                 HStack {
                     Text(item.name)
                     Text(item.surname)
+                    Button(action: {
+                        deleteItem(item: item)
+                    }) {
+                        Image(systemName: "trash")
+                    }
                 }
             }
         }
@@ -36,6 +41,9 @@ struct ContentView: View {
     
     private func addItem(_ name: String, _ surname: String) {
        context.insert(DataItem(name: name, surname: surname))
+    }
+    private func deleteItem(item: DataItem) {
+        context.delete(item)
     }
 }
 
