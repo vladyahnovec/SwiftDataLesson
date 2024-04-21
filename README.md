@@ -16,6 +16,7 @@
 2. Step --- ModelContainer (Конфигурация хранилища) ---
 
   ModelContainer - посредник между схемой данных и хранилищем
+  
 <img width="748" alt="Снимок экрана 2024-04-21 в 19 58 25" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/0f267719-ec12-410f-ab93-19193933bc74">
 
 3. Step --- modelContext ---
@@ -31,12 +32,15 @@
 5. Step --- Методы ---
 
   Добавление 
+  
 <img width="490" alt="Снимок экрана 2024-04-21 в 20 07 08" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/f6fe4984-29b7-4776-8068-0c3ab9c691fa">
 
   Удаление 
+  
 <img width="313" alt="Снимок экрана 2024-04-21 в 20 15 16" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/6daf0de2-4807-4c9a-b979-639a503a6364">
 
   Редактирование
+  
   <img width="327" alt="Снимок экрана 2024-04-21 в 20 15 41" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/a3cee8c4-b5cf-4fbc-8432-79d6dbae921f">
 
   
