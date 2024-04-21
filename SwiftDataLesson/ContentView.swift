@@ -25,7 +25,7 @@ struct ContentView: View {
                     .cornerRadius(10)
                     .font(.system(size: 20))
             }
-            List(items) { item in
+            ForEach(items) { item in
                 HStack {
                     Text(item.name)
                     Text(item.surname)
@@ -34,6 +34,13 @@ struct ContentView: View {
                     }) {
                         Image(systemName: "trash")
                     }
+                    .border(.black, width: 1)
+                    Button(action: {
+                        editItem(item: item)
+                    }) {
+                        Image(systemName: "pencil")
+                    }
+                    .border(.red, width: 1)
                 }
             }
         }
@@ -42,9 +49,17 @@ struct ContentView: View {
     private func addItem(_ name: String, _ surname: String) {
        context.insert(DataItem(name: name, surname: surname))
     }
+    
     private func deleteItem(item: DataItem) {
         context.delete(item)
     }
+    
+    private func editItem(item: DataItem) {
+        item.name = "NEW NAME"
+        item.surname = "NEW SURNAME"
+        try? context.save()
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
