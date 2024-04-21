@@ -1,4 +1,4 @@
-1. Step --- Model (Создаем схему данных) ---
+<h1 align="center"">1. Step --- Model (Создаем схему данных) --- </h1>
 
   <img width="757" alt="Снимок экрана 2024-04-21 в 19 53 28" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/f9ac930f-177d-40fe-9cad-e7e60c4afab7">
     
@@ -18,19 +18,19 @@
 
    @Transient var accommodation: Accommodation - свойство не будет сохраняться в базу
 
-2. Step --- ModelContainer (Конфигурация хранилища) ---
+<h1 align="center"">2. Step --- ModelContainer (Конфигурация хранилища) --- </h1>
 
   ModelContainer - посредник между схемой данных и хранилищем
   
 <img width="748" alt="Снимок экрана 2024-04-21 в 19 58 25" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/0f267719-ec12-410f-ab93-19193933bc74">
 
-3. Step --- modelContext ---
+<h1 align="center"">3. Step --- modelContext --- </h1>
    
    modelContext - для создания, изменения или удаления данных в SwiftData нужен ModelContext.
    
    Это сущность, которая хранит в памяти модель данных, наблюдает за всеми сделанными изменениями, а также занимается сохранением данных.
    
-   макрос @Query - получение данных из хранилища. Данные можно отсортировать или отфильтровать:
+   Макрос @Query - получение данных из хранилища. Данные можно отсортировать или отфильтровать:
    
    @Query(sort: \items.name) var items: [DataItem]
    
@@ -38,7 +38,7 @@
 
    <img width="732" alt="Снимок экрана 2024-04-21 в 20 03 14" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/ec900331-9d29-4599-86d9-7141e04474aa">
 
-5. Step --- Методы ---
+<h1 align="center"">4. Step --- Методы --- </h1>
 
   Добавление 
   
