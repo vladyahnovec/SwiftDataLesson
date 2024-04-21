@@ -3,10 +3,15 @@
   <img width="757" alt="Снимок экрана 2024-04-21 в 19 53 28" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/f9ac930f-177d-40fe-9cad-e7e60c4afab7">
     
    @Attribute(.unique) var name - гарантрирует уникальность значения поля
+   
    @Attribute(.allowsCloudEncryption) var name - сохраняет значение поля в зашифрованном виде 
+   
    @Attribute(.ephemeral) var name - отслеживать изменение этого свойства, но не сохранять их 
+   
    @Attribute(.preserveValueOnDeletion) var name - ?
+   
    @Attribute(.spotlight) var name - ?
+   
    @Attribute(.transformable(by: )) var name - ?
 
    @Relationship(.cascade) var cars: [Car] - при удалении, связанные сущности тоже удаляются 
@@ -22,9 +27,13 @@
 3. Step --- modelContext ---
    
    modelContext - для создания, изменения или удаления данных в SwiftData нужен ModelContext.
+   
    Это сущность, которая хранит в памяти модель данных, наблюдает за всеми сделанными изменениями, а также занимается сохранением данных.
+   
    макрос @Query - получение данных из хранилища. Данные можно отсортировать или отфильтровать:
+   
    @Query(sort: \items.name) var items: [DataItem]
+   
    @Query(filter: #Predicate<Item> { $0.name == "name" }, sort: \items.surname) var items: [DataItem]
 
    <img width="732" alt="Снимок экрана 2024-04-21 в 20 03 14" src="https://github.com/vladyahnovec/SwiftDataLesson/assets/153903831/ec900331-9d29-4599-86d9-7141e04474aa">
