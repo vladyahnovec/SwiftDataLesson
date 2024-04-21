@@ -11,6 +11,7 @@
 		F4B8799D2BD51A3A002A27DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8799C2BD51A3A002A27DA /* ContentView.swift */; };
 		F4B879A12BD51A3C002A27DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B879A02BD51A3C002A27DA /* Assets.xcassets */; };
 		F4B879A42BD51A3C002A27DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B879A32BD51A3C002A27DA /* Preview Assets.xcassets */; };
+		F4B879AC2BD51B9A002A27DA /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B879AB2BD51B9A002A27DA /* DataItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F4B8799C2BD51A3A002A27DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4B879A02BD51A3C002A27DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B879A32BD51A3C002A27DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4B879AB2BD51B9A002A27DA /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		F4B879992BD51A3A002A27DA /* SwiftDataLesson */ = {
 			isa = PBXGroup;
 			children = (
+				F4B879AA2BD51B87002A27DA /* SwiftData */,
 				F4B8799A2BD51A3A002A27DA /* SwiftDataLessonApp.swift */,
 				F4B8799C2BD51A3A002A27DA /* ContentView.swift */,
 				F4B879A02BD51A3C002A27DA /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				F4B879A32BD51A3C002A27DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4B879AA2BD51B87002A27DA /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				F4B879AB2BD51B9A002A27DA /* DataItem.swift */,
+			);
+			path = SwiftData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B8799D2BD51A3A002A27DA /* ContentView.swift in Sources */,
+				F4B879AC2BD51B9A002A27DA /* DataItem.swift in Sources */,
 				F4B8799B2BD51A3A002A27DA /* SwiftDataLessonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
