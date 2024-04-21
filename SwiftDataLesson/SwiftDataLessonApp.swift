@@ -10,9 +10,11 @@ import SwiftData
 
 @main
 struct SwiftDataLessonApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: DataItem.self)
     }
 }
